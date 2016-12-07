@@ -24,6 +24,13 @@ import{NewsfetchService} from '../providers/newsfetch.service';
 import{ShareddataService} from'../providers/shareddata.service';
 import { NewspreviewComponent } from './newspreview/newspreview.component';
 import { NewsdetailComponent } from './newsdetail/newsdetail.component';
+import { EntertainmentComponent } from './entertainment/entertainment.component';
+import { MoviesComponent } from './movies/movies.component';
+import { NewsComponent } from './news/news.component';
+import { BusinessComponent } from './business/business.component';
+import { FashionComponent } from './fashion/fashion.component';
+import { TechnologyComponent } from './technology/technology.component';
+import { MusicComponent } from './music/music.component';
 
 
 @NgModule({
@@ -36,7 +43,14 @@ import { NewsdetailComponent } from './newsdetail/newsdetail.component';
     ForgotpasswordComponent,
     MainnewsComponent,
     NewspreviewComponent,
-    NewsdetailComponent
+    NewsdetailComponent,
+    EntertainmentComponent,
+    MoviesComponent,
+    NewsComponent,
+    BusinessComponent,
+    FashionComponent,
+    TechnologyComponent,
+    MusicComponent
     /*ContactComponent,
     CalendarComponent,
     WeekViewComponent,
