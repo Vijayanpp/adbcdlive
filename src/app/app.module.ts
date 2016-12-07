@@ -19,10 +19,11 @@ import { SmallloaderComponent } from './smallloader/smallloader.component';
 import { ForgotpasswordComponent } from './Login Page/forgotpassword/forgotpassword.component';
 import {SimpleNotificationsModule} from 'angular2-notifications';
 import {Md5} from 'ts-md5/dist/md5';
-
 /*import {store} from "./Calendar Module/Store/store";*/
 import{NewsfetchService} from '../providers/newsfetch.service';
-import { NewspreviewComponent } from './newspreview/newspreview.component'
+import{ShareddataService} from'../providers/shareddata.service';
+import { NewspreviewComponent } from './newspreview/newspreview.component';
+import { NewsdetailComponent } from './newsdetail/newsdetail.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { NewspreviewComponent } from './newspreview/newspreview.component'
     SmallloaderComponent,
     ForgotpasswordComponent,
     MainnewsComponent,
-    NewspreviewComponent
+    NewspreviewComponent,
+    NewsdetailComponent
     /*ContactComponent,
     CalendarComponent,
     WeekViewComponent,
@@ -55,7 +57,7 @@ import { NewspreviewComponent } from './newspreview/newspreview.component'
     /*StoreModule.provideStore(store),*/
    
   ],
-  providers: [AuthenticationService,StorageService,Md5,{provide:'news',useClass:NewsfetchService}],
+  providers: [AuthenticationService,StorageService,ShareddataService,Md5,{provide:'news',useClass:NewsfetchService}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

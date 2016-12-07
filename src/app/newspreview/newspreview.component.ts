@@ -1,4 +1,5 @@
 import { Component, OnInit,Input} from '@angular/core';
+import{ShareddataService} from'../../providers/shareddata.service';
 
 @Component({
   selector: 'app-newspreview',
@@ -8,7 +9,7 @@ import { Component, OnInit,Input} from '@angular/core';
 export class NewspreviewComponent implements OnInit {
 	@Input() news
 
-  constructor() { }
+  constructor(private shareddataService:ShareddataService) { }
 
   ngOnInit() {
   }
@@ -17,12 +18,12 @@ export class NewspreviewComponent implements OnInit {
    get id() {
     return this.news.id;
   }
-  
+
   get source()
   {
   	return this.news.source
   }
-  get publishTime()
+  get time()
   {
   	return this.news.publishedAt
   }
@@ -49,6 +50,10 @@ export class NewspreviewComponent implements OnInit {
     }
 
     return false;
+  }
+  slectedNews(currentnews)
+  {
+  this.shareddataService.store.splice(0,1,currentnews)
   }
 
 }

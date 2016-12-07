@@ -1,4 +1,4 @@
-import { Component, OnInit ,Inject} from '@angular/core';
+import { Component, OnInit ,Inject,Input} from '@angular/core';
 
 @Component({
   selector: 'app-mainnews',
@@ -8,12 +8,9 @@ import { Component, OnInit ,Inject} from '@angular/core';
 export class MainnewsComponent implements OnInit {
 public NewsContent;
 public News;
-public newsObject;
-  constructor( @Inject('news') private todayNews) {
+public selectNews;
 
-   }
-
-  
+ constructor( @Inject('news') private todayNews) { }  
    
   ngOnInit() {
   	 this.todayNews.searchNews().subscribe(news=>
@@ -25,6 +22,7 @@ public newsObject;
       this.News[i].source=this.NewsContent.source;
      }});
   }
+  
 
 
 }

@@ -1,11 +1,11 @@
-<a>
+<a [routerLink]="['/newsdetail', title]" (click)="slectedNews(news.url)">
       <md-card>
-      <h4><a href="#">{{news.source}}</a></h4><span>{{news.publishTime}}</span>
+      <h6>{{news.publishedAt}}</h6>
+      <h4><a href="#" style="margin-right:20px;">{{news.source}}</a></h4>
        <img md-card-lg-image src='{{news.urlToImage}}'/>
         <md-card-title-group>
           <md-card-title>{{news.title}}</md-card-title>
-          <md-card-subtitle *ngIf="subtitle">{{news.author}}</md-card-subtitle>
-        </md-card-title-group>
+          </md-card-title-group>
         <md-card-content>
           <p *ngIf="description">{{news.description}}</p>
         </md-card-content>
