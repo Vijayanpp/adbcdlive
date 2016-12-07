@@ -1,24 +1,35 @@
 md-card {
       width: 400px;
-      height: 300px;
+      height:auto;
+      min-height: 400px;
       margin: 15px;
+      background:#fff;
+
     }
     md-card-title {
-      margin-right: 10px;
+       text-align: center;
+       background:#000;
+       color:#fff;
+       padding:10px;
+
     }
+    md-card-title {
+    font-size: 19px;
+    font-weight: 400;
+}
     a {
       color: inherit;
       text-decoration: none;
     }
     img {
       width: 100%;
-      
       min-width: 60px;
-      margin-left: 5px;
       margin-bottom:10px;
     }
     md-card-content {
+
       margin-top: 15px;
+
     }
     span {
       display: inline-block;
@@ -26,4 +37,15 @@ md-card {
     }
     md-card-footer {
       padding: 0 25px 25px;
+      font-size:17px;
+      font-weight:bold;
+      color:#fd9754;
+      margin-top:10px;
     }
+
+md-card a:hover
+
+{
+  text-decoration: underline;
+
+}

@@ -8,6 +8,7 @@ import { Component, OnInit ,Inject} from '@angular/core';
 export class MainnewsComponent implements OnInit {
 public NewsContent;
 public News;
+public newsObject;
   constructor( @Inject('news') private todayNews) {
 
    }
@@ -19,9 +20,10 @@ public News;
   	 {
      this.NewsContent=news;
      this.News=this.NewsContent.articles;
-
-     }
-   	)
+     for(let i=0;i<this.News.length;i++)
+     {
+      this.News[i].source=this.NewsContent.source;
+     }});
   }
 
 
