@@ -1,0 +1,34 @@
+
+<form name="form" (ngSubmit)="login(loginForm)"  [formGroup]="loginForm" novalidate>
+  <div class="group">
+     
+    <input type="email" placeholder="Username" formControlName="username"   name="username"  required ><span class="highlight"></span><span class="bar" ></span>
+    <small *ngIf="!loginForm.controls.username.valid&&!loginForm.controls.username.pristine" class="text-danger">
+              Name is required (minimum 5 characters).{{loginForm.controls.username.pristine}}
+            </small>          
+  </div>
+  <div class="group">
+    <input type="password" placeholder="password"  formControlName="password" name="password" required ><span class="highlight"></span><span class="bar"></span>
+    <small *ngIf="!loginForm.controls.password.valid&&!loginForm.controls.password.pristine" class="text-danger">
+              Password is required (minimum 5 characters).
+            </small>    
+    
+  </div>
+  <button type="submit" class="button buttonBlue" [disabled]="!loginForm.valid">Login
+    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    <div *ngIf="loading" ><app-smallloader></app-smallloader></div>
+  </button>
+<input type='checkbox' id='remember' formControlName='checked'/>
+  <span class="remember-label"> Remember me</span>
+
+<div class='text-right'><a [routerLink]="['/forgotpassword']">Forgot Your Password</a></div>
+
+</form>
+<footer><a href="#" target="_blank"><img src="images/inquisive.png"></a>
+  <p>You Gotta Love <a href="#" target="_blank">Inquisiv</a></p>
+</footer>
+
+
+<simple-notifications [options]="options" (onCreate)="onCreate($event)" (onDestroy)="onDestroy($event)"></simple-notifications>
+
+
