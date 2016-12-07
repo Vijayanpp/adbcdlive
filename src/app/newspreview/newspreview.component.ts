@@ -51,9 +51,6 @@ export class NewspreviewComponent implements OnInit {
 
     return false;
   }
-  slectedNews(currentnews)
-  {
-  this.shareddataService.store.splice(0,1,currentnews)
-  }
+ 
 
 }

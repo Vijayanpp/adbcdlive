@@ -7,7 +7,8 @@ import{ShareddataService} from'../../providers/shareddata.service';
 })
 export class NewsdetailComponent implements OnInit {
 	public currentNews;
-	public NewsContent
+	public NewsContent;
+	public News
 
   constructor(private shareddataService:ShareddataService,@Inject('news') private currentnews) { }
 
@@ -18,12 +19,20 @@ export class NewsdetailComponent implements OnInit {
   loadPage()
   {
   this.currentNews=this.shareddataService.store[0];
+  console.log(this.currentNews);
   this.currentnews. retrieveNews(this.currentNews).subscribe(news=>
   	 {
-     this.NewsContent=news;     
-  })
+    this.NewsContent=news;
+     this.News=this.NewsContent.articles;
+     for(let i=0;i<this.News.length;i++)
+     {
+      this.News[i].source=this.NewsContent.source;
+     }});   
+  
   
 
   }
+
+   
 
 }

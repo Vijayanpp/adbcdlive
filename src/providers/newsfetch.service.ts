@@ -6,7 +6,7 @@ import { Offer } from '../models/offer';
 
 @Injectable()
 export class NewsfetchService {
-  private API_PATH: string = 'https://newsapi.org/v1/articles?source=business-insider-uk&sortBy=top&&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e';
+  private API_PATH: string = 'https://newsapi.org/v1/articles?source=hacker-news&sortBy=top&&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e';
 
   constructor(private http: Http) {}
 
@@ -20,14 +20,14 @@ export class NewsfetchService {
       .map(res => res.json());
   }
 
-   retrieveNews(url: string): Observable<any> {
+   retrieveNews(url: string): Observable<Offer> {
    	 let headers = new Headers();
    	  this.createAccess(headers);
 
     return this.http.get(url, {
       headers: headers
     })
-      .map((res)=>{return res});
+      .map(res => res.json());
   }
 
   searchOffers(queryTitle: string): Observable<Offer[]> {

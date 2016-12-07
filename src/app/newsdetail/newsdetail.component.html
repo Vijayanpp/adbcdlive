@@ -1,4 +1,3 @@
-<p>
-  newsdetail works!
-</p>
-<div [innerHtml]='NewsContent'></div>
+
+<app-newspreview *ngFor='let news of News' [news]='news' ></app-newspreview>
+

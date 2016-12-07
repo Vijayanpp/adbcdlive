@@ -2,7 +2,6 @@
       <md-toolbar>
 
  <header>
-<h3>Inquisve</h3>
 
 
 </header>
@@ -14,4 +13,76 @@
  </ng-content>
     <div *ngIf="loading" ><app-loader></app-loader></div>
   </md-sidenav-layout>
+
+  <div class='site-side'>
+  <div class="newsapp-logos">
+<a href="/">
+<img src="" class="img-responsive">
+<h1>Inquisive</h1>
+<p>code neat and clean</p>
+</a>
+</div>
+
+<nav class="side-nav">
+<ul class="list-unstyled nav-text">
+ 
+<li class="cta-enroll" style="margin-bottom: 15px">
+<a href="https://school.scotch.io/enroll">
+<span class="iconic iconic-rocket"></span> Enroll in School
+</a>
+</li>
+
+ 
+<li><a [routerLink]="['/newsdetail', 'Entertainment']" (click)="slectedNews('https://newsapi.org/v1/articles?source=hacker-news&sortBy=top&&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e')">
+<span class="iconic iconic-media-play-circle"></span>
+Entertainment
+</a></li>
+<li><a [routerLink]="['/newsdetail', 'Movies']">
+<span class="iconic iconic-chat"></span>
+Movies
+</a></li>
+<li><a [routerLink]="['/newsdetail', 'News']">
+<span class="iconic iconic-chat"></span>
+News
+</a></li>
+
+<li><a [routerLink]="['/newsdetail', 'Business']">
+<span class="iconic iconic-chat"></span>
+Business
+</a></li>
+<li><a [routerLink]="['/newsdetail', 'Fashion']">
+<span class="iconic iconic-chat"></span>
+Fashion
+</a></li>
+<li><a [routerLink]="['/newsdetail', 'Technology']">
+<span class="iconic iconic-chat"></span>
+Technology
+</a></li>
+
+
+<div class="square-nav-items">
+<li>
+<a href="https://facebook.com/scotchdevelopment" target="_blank"><span class="iconic iconic-social-facebook"></span></a>
+</li>
+<li>
+<a href="https://twitter.com/scotch_io" target="_blank"><span class="iconic iconic-social-twitter"></span></a>
+</li>
+<li>
+<a href="#" class="toggle-super-search"><span class="iconic iconic-magnifying-glass"></span></a>
+</li>
+</div>
+<div class="nav-small-items">
+ 
+<li style="margin-top: 15px"><a href="/about">About Us</a></li>
+<li class="post-ideas">
+<a href="https://pub.scotch.io/ideas">Write for Us <span class="label label-default" style="margin-left:5px">0</span></a>
+</li>
+<li><a id="shop-link" href="http://shop.scotch.io/">Shop</a></li>
+<li><a id="slack-link" href="http://slack.scotch.io/">Join On Slack</a></li>
+ 
+</div>
+</ul>
+</nav>
+
+  </div>
  
