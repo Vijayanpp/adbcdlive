@@ -33,6 +33,7 @@
     "angular2-masonry": "^0.3.0",
     "angular2-notifications": "^0.4.46",
     "core-js": "^2.2.2",
+    "font-awesome": "^4.7.0",
     "loadash": "0.0.1",
     "lodash": "^4.17.2",
     "moment": "^2.16.0",
