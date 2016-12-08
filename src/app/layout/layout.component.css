@@ -1,5 +1,6 @@
 md-sidenav-layout {
       background: #ccc;
+
     }
     
     *, /deep/ * {
@@ -76,4 +77,8 @@ md-sidenav-layout {
 .site-side .nav-text a, .site-side .scotch-logos {
     -webkit-transition: .3s ease all;
     -moz-transition: .3s ease all;
+}
+ul
+{
+    font-family:arial;
 }

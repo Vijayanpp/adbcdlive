@@ -1,8 +1,9 @@
 <a href='{{news.url}}' target='_blank'>
+ <masonry-brick>
       <md-card>
       <h6>{{news.publishedAt}}</h6>
       <h4><a href="#" style="margin-right:20px;">{{news.source}}</a></h4>
-       <img md-card-lg-image src='{{news.urlToImage}}'/>
+       <img md-card-lg-image *ngIf="thumbnail" src='{{news.urlToImage}}'/>
         <md-card-title-group>
           <md-card-title>{{news.title}}</md-card-title>
           </md-card-title-group>
@@ -10,8 +11,9 @@
           <p *ngIf="description">{{news.description}}</p>
         </md-card-content>
         <md-card-footer>
-      <span *ngIf='author' class='right' >By:{{news.author}}</span>
+      <span *ngIf='author' class='right' ></span>
         </md-card-footer>
       </md-card>
+       </masonry-brick>
     </a>
     <!--<a [routerLink]="['/newsdetail', title]" (click)="slectedNews(news.url)">-->

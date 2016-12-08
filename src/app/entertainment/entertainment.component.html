@@ -1,1 +1,5 @@
-<app-newspreview *ngFor='let news of News' [news]='news' ></app-newspreview>
+<!--<app-newspreview *ngFor='let news of News' [news]='news' ></app-newspreview>-->
+
+ <masonry>
+       <app-newspreview *ngFor='let news of News' [news]='news' ></app-newspreview>
+     </masonry>

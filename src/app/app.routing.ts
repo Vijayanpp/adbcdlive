@@ -14,7 +14,7 @@ import { MusicComponent } from './music/music.component';
 
 const appRoutes: Routes = [
  
-     {path: '', component: MainnewsComponent},
+     {path: '', component:EntertainmentComponent},
       {path: 'Entertainment', component: EntertainmentComponent},
       {path: 'Movies', component: MoviesComponent},
       {path: 'News', component: NewsComponent},

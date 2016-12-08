@@ -10,6 +10,7 @@ public NewsContent;
 public News;
 public selectNews;
 
+
  constructor( @Inject('news') private todayNews) { }  
    
   ngOnInit() {

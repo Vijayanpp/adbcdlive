@@ -1,11 +1,28 @@
 md-card {
-      width: 400px;
+      width:200px;
       height:auto;
-      min-height: 400px;
+      min-height:100px;
       margin: 15px;
       background:#fff;
       cursor:pointer;
+      transition: all 0.5s ease-in;
+     /*background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  font-family: sans-serif;
+   position: relative;*/
 
+    display: inline-block;
+      
+    }
+    md-card:hover
+    {
+      box-shadow:2px 2px 5px 5px rgba(0,0,0,0.3);
+      -webkit-box-shadow:2px 2px 5px 5px rgba(0,0,0,0.3);
+      -moz-box-shadow:2px 2px 5px 5px rgba(0,0,0,0.3);
     }
     md-card-title {
        text-align: center;

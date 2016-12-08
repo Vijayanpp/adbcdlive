@@ -7,6 +7,8 @@ import { fakeBackendProvider } from './_helpers/index';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { BaseRequestOptions } from '@angular/http';
 import { MaterialModule } from '@angular/material';
+import { MasonryModule } from 'angular2-masonry';
+import {MdIcon,MdIconRegistry} from '@angular/material/icon';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoaderComponent } from './loader/loader.component';
@@ -68,6 +70,7 @@ import { MusicComponent } from './music/music.component';
     MaterialModule,
     routing,
     SimpleNotificationsModule,
+    MasonryModule
     /*StoreModule.provideStore(store),*/
    
   ],

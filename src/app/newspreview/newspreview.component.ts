@@ -45,11 +45,7 @@ export class NewspreviewComponent implements OnInit {
   }
 
   get thumbnail(): string | boolean {
-    if (this.news.imageLinks) {
-      return this.news.volumeInfo.imageLinks.smallThumbnail;
-    }
-
-    return false;
+    return this.news.urlToImage;
   }
  
 
