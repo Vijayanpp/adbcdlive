@@ -6,7 +6,7 @@ import { Offer } from '../models/offer';
 
 @Injectable()
 export class NewsfetchService {d
-  private API_PATH: string ='/news' /*'https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e';*/
+  private API_PATH: string ='/mainnews';
 
   constructor(private http: Http) {}
 

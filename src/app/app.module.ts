@@ -33,6 +33,10 @@ import { BusinessComponent } from './business/business.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { MusicComponent } from './music/music.component';
+import { YathraComponent } from './yathra/yathra.component';
+import { CookingComponent } from './cooking/cooking.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { BuysellComponent } from './buysell/buysell.component';
 
 
 @NgModule({
@@ -52,7 +56,11 @@ import { MusicComponent } from './music/music.component';
     BusinessComponent,
     FashionComponent,
     TechnologyComponent,
-    MusicComponent
+    MusicComponent,
+    YathraComponent,
+    CookingComponent,
+    JobsComponent,
+    BuysellComponent
     /*ContactComponent,
     CalendarComponent,
     WeekViewComponent,

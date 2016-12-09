@@ -1,6 +1,7 @@
 var jsonfile = require('jsonfile');
 var file='./server/json/entertainment.json';
 var request = require('request');
+var shuffles=require('./provider/shuffleprovider.js');
 var obj;
  
 var newssites=['https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
@@ -33,7 +34,7 @@ request(url, function (error, response, body) {
      articles=articles.concat(data[i].articles);
      }
 
-     articles=shuffle(articles);
+     articles=shuffles.doShuffle(articles);
 
   jsonfile.writeFile(file,articles, function (err) {
   console.error(err)
@@ -42,20 +43,4 @@ request(url, function (error, response, body) {
 })
 })
 
-/*To Shuffle an Array*/
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
 
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
