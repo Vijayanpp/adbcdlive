@@ -29,7 +29,7 @@ md-sidenav-layout {
     position: fixed;
     height: 100%;
     width: 220px;
-    background: #252525;
+    background: #fff;
     z-index: 999;
     top: 0;
     left: 0;
@@ -60,12 +60,18 @@ md-sidenav-layout {
     list-style: none;
 }
 
+.site-side .nav-text a
+{
+    color:#000;
+}
+
+
 .site-side .nav-text a:hover {
     color: #FFF;
     background: #1d1d1d;
 }
 .site-side .nav-text a {
-    color: #BBB;
+    color: #030000;
     display: block;
     padding: 7px 30px 12px;
     font-size: 14px;
