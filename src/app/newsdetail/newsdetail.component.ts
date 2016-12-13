@@ -1,38 +1,43 @@
 import { Component, OnInit,Inject } from '@angular/core';
 import{ShareddataService} from'../../providers/shareddata.service';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-newsdetail',
   templateUrl: './newsdetail.component.html',
   styleUrls: ['./newsdetail.component.css']
 })
 export class NewsdetailComponent implements OnInit {
-	public currentNews;
+	public currentId;
 	public NewsContent;
-	public News
+	public URL;
+  public id:number;
+  public sub:any;
 
-  constructor(private shareddataService:ShareddataService,@Inject('news') private currentnews) { }
+  constructor(@Inject('news') private moviedetail,private route: ActivatedRoute) { }
 
   ngOnInit() {
-  	this.loadPage();
+    this.sub = this.route.params.subscribe(params => {
+       this.id = +params['id']; // (+) converts string 'id' to a number
+       this.URL='https://api.themoviedb.org/3/movie/346672?api_key=9cdc371119e251328b3113f78936e475';
+       	this.loadPage(this.URL);
+      
+    });
+  
   }
 
-  loadPage()
+  loadPage(url)
   {
-  this.currentNews=this.shareddataService.store[0];
-  console.log(this.currentNews);
-  this.currentnews. retrieveNews(this.currentNews).subscribe(news=>
-  	 {
-    this.NewsContent=news;
-     this.News=this.NewsContent.articles;
-     for(let i=0;i<this.News.length;i++)
-     {
-      this.News[i].source=this.NewsContent.source;
-     }});   
   
+  this.moviedetail. retrieveNews(url).subscribe(news=>
+  	 {
+      console.log(news);
+    }); 
   
 
   }
 
-   
+    ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
 
 }

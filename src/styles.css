@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+section.left-container
+{
+	margin-left:220px;
+	overflow-x:hidden;
+}
+.main-news
+{
+   width: 90%;
+    height: auto;
+    min-height: 200px;
+    background: #fff;
+    margin: 20px auto
+}
+/*Responsive-------------------*/
+@media (max-width:768px)
+{
+    .site-side
+    {
+        display: none;
+    }
+
+
+   section.left-container
+    {
+        margin-left:0px;        
+    }
+}

@@ -9,8 +9,8 @@ import{ShareddataService} from'../../providers/shareddata.service';
 export class MoviesComponent implements OnInit {
 
   	public currentNews;
-	public NewsContent;
-	public News
+	public MovieContent;
+	public Movies
 
   constructor(private shareddataService:ShareddataService,@Inject('news') private currentnews) { }
 
@@ -22,10 +22,10 @@ export class MoviesComponent implements OnInit {
   {
     
 
-  this.currentnews. retrieveNews('/movies').subscribe(news=>
+  this.currentnews. retrieveNews('/movies').subscribe(movies=>
   	 {
-    this.NewsContent=news;
-     this.News=this.NewsContent
+    this.MovieContent=movies;
+     this.Movies=this.MovieContent
      });   
   
   

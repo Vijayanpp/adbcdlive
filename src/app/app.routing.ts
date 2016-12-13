@@ -21,7 +21,8 @@ const appRoutes: Routes = [
       {path: 'Business', component: BusinessComponent},
       {path: 'Fashion', component: FashionComponent},
       {path: 'Music', component: MusicComponent},
-      {path: 'Technology', component:TechnologyComponent},           
+      {path: 'Technology', component:TechnologyComponent},
+       {path: 'detail/:id', component: NewsdetailComponent},         
      { path: '**', redirectTo: '' }
 ];
 

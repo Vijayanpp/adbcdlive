@@ -37,6 +37,7 @@ import { YathraComponent } from './yathra/yathra.component';
 import { CookingComponent } from './cooking/cooking.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { BuysellComponent } from './buysell/buysell.component';
+import { MoviepreviewComponent } from './moviepreview/moviepreview.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { BuysellComponent } from './buysell/buysell.component';
     YathraComponent,
     CookingComponent,
     JobsComponent,
-    BuysellComponent
+    BuysellComponent,
+    MoviepreviewComponent
     /*ContactComponent,
     CalendarComponent,
     WeekViewComponent,
