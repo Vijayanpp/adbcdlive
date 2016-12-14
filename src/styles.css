@@ -12,7 +12,21 @@ section.left-container
     background: #fff;
     margin: 20px auto
 }
+.site-side
+{
+    font-family: 'Aref Ruqaa', serif;
+}
+.left-container p
+{
+    font-family: 'Roboto', sans-serif;
+
+}
+.title, md-card-title,h6
+{
+    font-family: 'Mirza', cursive;
+}
 /*Responsive-------------------*/
+
 @media (max-width:768px)
 {
     .site-side

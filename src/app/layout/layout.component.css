@@ -43,7 +43,8 @@ md-sidenav-layout {
     transition: .3s ease all;
     -webkit-transition: .3s ease all;
     -moz-transition: .3s ease all;
-    background:  #111
+    background:  #111;
+    display:none;
 }
 
 .site-side .newsapp-logos:hover {
@@ -74,7 +75,7 @@ md-sidenav-layout {
     color: #030000;
     display: block;
     padding: 7px 30px 12px;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: .5px;
     transition: .3s ease all;
     line-height: 1;
@@ -86,7 +87,7 @@ md-sidenav-layout {
 }
 ul
 {
-    font-family:arial;
+   font-family: 'Mirza', cursive;
 }
 i
 {
