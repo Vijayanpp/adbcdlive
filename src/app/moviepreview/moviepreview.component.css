@@ -1,33 +1,25 @@
 md-card {
       
-      height:auto;
-         min-height:100px;
+      height:auto;    
+     min-height:280px;
       margin: 15px;
       background:#fff;
       cursor:pointer;
       transition: all 0.5s ease-in;
-     /*background: rgba(255, 255, 255, 0.25);
-  color: #fff;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-  font-family: sans-serif;
-   position: relative;*/
-
-    display: inline-block;
-      
+      display: inline-block;      
     }
     masonry-brick
     {
       width:33%;
+      height:auto;
+      min-height: 100px;
     }
-    md-card:hover
+    /*md-card:hover
     {
       box-shadow:2px 2px 5px 5px rgba(0,0,0,0.3);
       -webkit-box-shadow:2px 2px 5px 5px rgba(0,0,0,0.3);
       -moz-box-shadow:2px 2px 5px 5px rgba(0,0,0,0.3);
-    }
+    }*/
     md-card-title {
        text-align: center;
         color:#fff;
@@ -50,6 +42,7 @@ md-card {
       width: 100%;
       min-width: 60px;
       margin-bottom:10px;
+      
     }
     md-card-content {
 
@@ -117,3 +110,60 @@ p {
     font-size: 1em;
     line-height: 1.4em;
 }
+
+
+@media (max-width: 1360px)
+{
+  
+  .image_content
+  {
+    height:auto;
+  }
+  .image_content img
+  {
+    min-height: 291px!important;
+  }
+  .image_content
+  {
+    float:none !important;
+    width:100% !important;
+    height: auto;
+    min-height: 200px;
+    max-height: 327px;
+  }
+  a.result {
+    float: left;
+}
+}
+
+
+
+@media (max-width: 1024px)
+{
+  masonry-brick
+  {
+    width:50%;
+
+  }
+  
+}
+
+
+@media (max-width:568px)
+{
+  masonry-brick
+  {
+    width:100%;
+    height:auto;
+    
+  }
+a.result {
+    float: left;
+    width:100%;
+}
+
+}
+
+
+
+

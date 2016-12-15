@@ -34,9 +34,21 @@ section.left-container
         display: none;
     }
 
-
    section.left-container
     {
         margin-left:0px;        
     }
+
+.log,i.fa-th
+{
+    display:block!important;
+}
+md-toolbar md-toolbar-row
+{
+    min-height: 80px;
+}
+md-toolbar
+{
+    background: #000!important;
+}
 }
