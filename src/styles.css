@@ -32,6 +32,12 @@ section.left-container
     .site-side
     {
         display: none;
+        position:fixed;
+        
+    }
+    .newsapp-logos
+    {
+        display:none;
     }
 
    section.left-container

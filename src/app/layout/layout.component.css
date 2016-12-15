@@ -126,3 +126,13 @@ i.fa-th:hover
 
 
 
+@media (max-width:768px)
+{
+    .site-side
+    {
+        
+       
+        top:80px;
+        
+    }
+}

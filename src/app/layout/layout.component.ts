@@ -18,7 +18,11 @@ public menustatus:boolean=false;
 
   menuClick()
   {
-    this.menustatus!=this.menustatus;
+    if(this.menustatus==false)
+    this.menustatus=true
+    else
+    this.menustatus=false;
+    console.log(this.menustatus);
     console.log('hi')
   }
 

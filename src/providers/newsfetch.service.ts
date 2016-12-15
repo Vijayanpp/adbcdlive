@@ -20,13 +20,19 @@ export class NewsfetchService {d
       .map(res => res.json());
   }
 
-   retrieveNews(url: string): Observable<Offer> {
-   	 let headers = new Headers();
-   	  this.createAccess(headers);
+  //  retrieveNews(url: string): Observable<Offer> {
+  //  	 let headers = new Headers();
+  //  	  this.createAccess(headers);
 
-    return this.http.get(url, {
-      headers: headers
-    })
+  //   return this.http.get(url, {
+  //     headers: headers
+  //   })
+  //     .map(res => res.json());
+  // }
+   retrieveNews(url: string): Observable<Offer> {
+   	
+
+    return this.http.get(url)
       .map(res => res.json());
   }
 
@@ -42,6 +48,8 @@ export class NewsfetchService {d
   }
 
    createAccess(headers: Headers) {
-    headers.append('Access-Control-Allow-Origin', 'http '); 
+    headers.append('Access-Control-Allow-Origin', 'http'); 
+    headers.append('Access-Control-Request-Method', 'GET')
+ headers.append('Access-Control-Request-Headers', 'content-type,accept')
   }
 }

@@ -1,0 +1,12 @@
+<md-card *ngIf='movie'>
+<h1 class='title'>{{movie.original_title}}</h1>
+
+<md-grid-list cols="2">
+   <md-grid-tile><img class="poster lazyautosizes lazyloaded" data-sizes="auto"  alt="{{movie.original_title}}" sizes="185px" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2{{movie.poster_path}}">         </md-grid-tile>
+   <md-grid-tile><p>{{movie.overview}}</p></md-grid-tile>
+</md-grid-list>
+
+
+</md-card>
+
+

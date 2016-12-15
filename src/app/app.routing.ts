@@ -11,6 +11,7 @@ import { BusinessComponent } from './business/business.component';
 import { FashionComponent } from './fashion/fashion.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { MusicComponent } from './music/music.component';
+import { MoviedetailComponent } from './moviedetail/moviedetail.component';
 
 const appRoutes: Routes = [
  
@@ -22,7 +23,7 @@ const appRoutes: Routes = [
       {path: 'Fashion', component: FashionComponent},
       {path: 'Music', component: MusicComponent},
       {path: 'Technology', component:TechnologyComponent},
-       {path: 'detail/:id', component: NewsdetailComponent},         
+       {path: 'detail/:id', component: MoviedetailComponent},         
      { path: '**', redirectTo: '' }
 ];
 

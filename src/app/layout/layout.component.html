@@ -15,7 +15,7 @@
     <div *ngIf="loading" ><app-loader></app-loader></div>
   </md-sidenav-layout>
 
-  <div class='site-side'>
+  <div class='site-side' [ngClass]="{'displayblock':menustatus }">
   <div class="newsapp-logos">
 <a href="/">
 <img src="../assets/images/logo.png" style='width:70%;' class="img-responsive">
@@ -25,7 +25,7 @@
 
 </div>
 
-<nav class="side-nav"  [ngClass]="{'displayblock':menustatus }">
+<nav class="side-nav"  >
 <ul class="list-unstyled nav-text">
  
 

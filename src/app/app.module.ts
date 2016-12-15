@@ -38,6 +38,7 @@ import { CookingComponent } from './cooking/cooking.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { BuysellComponent } from './buysell/buysell.component';
 import { MoviepreviewComponent } from './moviepreview/moviepreview.component';
+import { MoviedetailComponent } from './moviedetail/moviedetail.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { MoviepreviewComponent } from './moviepreview/moviepreview.component';
     CookingComponent,
     JobsComponent,
     BuysellComponent,
-    MoviepreviewComponent
+    MoviepreviewComponent,
+    MoviedetailComponent
     /*ContactComponent,
     CalendarComponent,
     WeekViewComponent,
