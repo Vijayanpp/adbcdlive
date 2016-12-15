@@ -6,7 +6,7 @@
  </div>
  
 </header> 
-<div class='right'><i class="fa fa-th" aria-hidden="true"></i> </div>
+<div class='right'><i class="fa fa-th" aria-hidden="true" (click)=" menuClick()"></i> </div>
 </md-toolbar>
 
 <ng-content>
@@ -25,7 +25,7 @@
 
 </div>
 
-<nav class="side-nav">
+<nav class="side-nav"  [ngClass]="{'displayblock':menustatus }">
 <ul class="list-unstyled nav-text">
  
 

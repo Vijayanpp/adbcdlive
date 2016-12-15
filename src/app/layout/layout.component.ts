@@ -9,10 +9,17 @@ import{ShareddataService} from'../../providers/shareddata.service';
 export class LayoutComponent implements OnInit {
 
 public loading:boolean=true;
+public menustatus:boolean=false;
   constructor(private shareddataService:ShareddataService ) { }
 
   ngOnInit() {
   	this.loading=false;
+  }
+
+  menuClick()
+  {
+    this.menustatus!=this.menustatus;
+    console.log('hi')
   }
 
 
