@@ -99,7 +99,7 @@ div.item p {
 }
 p.overview
 {
-  height:113px;
+
   text-overflow: ellipsis;
   font-family: 'Roboto', sans-serif;
 }
@@ -112,16 +112,13 @@ p {
 }
 
 
-@media (max-width: 1360px)
+@media (max-width: 2000px)
 {
   
-  .image_content
-  {
-    height:auto;
-  }
+  
   .image_content img
   {
-    min-height: 291px!important;
+    min-height:291px!important;
   }
   .image_content
   {

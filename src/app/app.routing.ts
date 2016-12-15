@@ -20,7 +20,7 @@ const appRoutes: Routes = [
       {path: 'Movies', component: MoviesComponent},
       {path: 'News', component: NewsComponent},
       {path: 'Business', component: BusinessComponent},
-      {path: 'Fashion', component: FashionComponent},
+      {path: 'Sports', component: FashionComponent},
       {path: 'Music', component: MusicComponent},
       {path: 'Technology', component:TechnologyComponent},
        {path: 'detail/:id', component: MoviedetailComponent},         

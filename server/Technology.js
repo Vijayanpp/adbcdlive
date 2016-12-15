@@ -4,13 +4,13 @@ var request = require('request');
 var shuffles=require('./provider/shuffleprovider.js');
 var obj;
  
-var newssites=['https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=mashable&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=entertainment-weekly&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=national-geographic&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=mtv-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e'
+var newssites=[' https://newsapi.org/v1/articles?source=wired-de&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+' https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+'https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+'https://newsapi.org/v1/articles?source=t3n&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+'https://newsapi.org/v1/articles?source=recode&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+'https://newsapi.org/v1/articles?source=polygon&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+' https://newsapi.org/v1/articles?source=ars-technica&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e'
 ]
 
 var data=[];

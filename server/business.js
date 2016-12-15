@@ -4,13 +4,13 @@ var request = require('request');
 var shuffles=require('./provider/shuffleprovider.js');
 var obj;
  
-var newssites=['https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=mashable&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=entertainment-weekly&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=daily-mail&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+var newssites=['https://newsapi.org/v1/articles?source=the-wall-street-journal&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+'https://newsapi.org/v1/articles?source=the-economist&sortBy=top&apiKey=https://newsapi.org/v1/articles?source=mashable&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+'https://newsapi.org/v1/articles?source=handelsblatt&sortBy=latest&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+'https://newsapi.org/v1/articles?source=die-zeit&sortBy=latest&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+' https://newsapi.org/v1/articles?source=business-insider&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
 'https://newsapi.org/v1/articles?source=national-geographic&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=mtv-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e'
+'https://newsapi.org/v1/articles?source=associated-press&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e'
 ]
 
 var data=[];

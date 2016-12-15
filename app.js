@@ -21,6 +21,7 @@ var technologyjson='./server/json/technology.json'
 var app = express();
 
 
+
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/dist'));
@@ -29,6 +30,8 @@ app.use(express.static(__dirname + '/dist'));
 app.get('/', function(request, response) {
   response.render('index.html');
 });
+
+
 
 app.get('/mainnews', function(request, response) {
  jsonfile.readFile(entjson, function(err, obj) {
@@ -44,12 +47,13 @@ app.get('/entertainment', function(request, response) {
 
 app.get('/news', function(request, response) {
  jsonfile.readFile(newsjson, function(err, obj) {
+   console.log(obj);
   response.send(obj)
 })
 })
 
 app.get('/fashion', function(request, response) {
- jsonfile.readFile(newsjson, function(err, obj) {
+ jsonfile.readFile(fashionjson, function(err, obj) {
   response.send(obj)
 })
 })
