@@ -4,21 +4,22 @@ var request = require('request');
 var shuffles=require('./provider/shuffleprovider.js');
 var obj;
  
-var newssites=[' https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=the-huffington-post&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-' https://newsapi.org/v1/articles?source=the-hindu&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=reuters&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=reddit-r-all&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=sky-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=mirror&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=metro&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=focus&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=associated-press&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
-'https://newsapi.org/v1/articles?source=abc-news-au&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e'
+// var newssites=[' https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=the-huffington-post&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// ' https://newsapi.org/v1/articles?source=the-hindu&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=reuters&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=reddit-r-all&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=sky-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=mirror&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=metro&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=focus&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=associated-press&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e',
+// 'https://newsapi.org/v1/articles?source=abc-news-au&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e'
 
-]
+// ]
+var newssites=[' https://newsapi.org/v1/articles?source=the-new-york-times&sortBy=top&apiKey=3e22f2fcc1344975ae2b2e69379e2a6e']
 
 var data=[];
 var articles=[];
