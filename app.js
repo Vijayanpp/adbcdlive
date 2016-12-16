@@ -7,7 +7,7 @@ var fashion=require('./server/fashion.js');
 var hotoffer=require('./server/hotoffer.js');
 var movie= require('./server/movie.js');
 var quotes= require('./server/quotes.js');
-var technology=require('./server/technology.js');
+var technology=require('./server/Technology.js');
 /*-----------------------------------------------------------------*/
 var entjson='./server/json/entertainment.json';
 var newsjson='./server/json/news.json'
